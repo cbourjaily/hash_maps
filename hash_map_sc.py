@@ -1,19 +1,18 @@
 # Name: Christopher Vote
-# OSU Email: votec@oregonstate.edu
-# Course: CS261 - Data Structures
-# Assignment: Assignment 6: HashMap (Portfolio Assignment)
-# Due Date: 8/12/25
-# Description: This program contains an implementation of a hash_map abstract data
-#              type using single chaining. The hash table is implemented on a DynamicArray
-#              data structure. Also included is a SinglyLinkedList data structure for collision
-#              handling.
-#              The hash_map contains the following public methods: get_size(), get_capacity,
-#              put(), resize_table(), table_load(), empty_buckets(), get(), contains_key(),
-#              remove(), get_keys_and_values(), and clear().
-#              Also included in the file is an implementation of a find_mode() function, which
-#              takes an array of values and determines the mode(s) among the elements and returns
-#              this value or values, along with the attendant frequency of occurrence.
-#              DynamicArray data structure and determines the mode of its values.
+# Program: HashMap Implementation with Separate Chaining
+# Description: This module implements a hash map abstract data type using separate
+#              chaining for collision resolution. The hash table is built on top
+#              of a DynamicArray structure and uses a SinglyLinkedList structure
+#              to manage collisions within buckets.
+#
+#              The implementation includes insertion, retrieval, removal,
+#              resizing, load factor calculation, key/value inspection, and
+#              table management operations. It also includes a find_mode()
+#              utility function for determining the most frequent values within
+#              a collection.
+#
+#              This project demonstrates hash table design, collision resolution,
+#              dynamic resizing, linked data structures, and algorithmic analysis.
 
 
 from a6_include import (DynamicArray, LinkedList,

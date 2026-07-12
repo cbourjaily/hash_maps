@@ -1,13 +1,15 @@
 # Name: Christopher Vote
-# OSU Email: votec@oregonstate.edu
-# Course: CS261 - Data Structures
-# Assignment: Assignment 6: HashMap (Portfolio Assignment)
-# Due Date: 8/12/25
-# Description: This program contains an implementation of a hash_map abstract data
-#              type. The program uses the methodology of open addressing.
-#              The hash_map contains the following public methods: get_size(), get_capacity,
-#              put(), resize_table(), table_load(), empty_buckets(), get(), contains_key(),
-#              remove(), get_keys_and_values(), and clear().
+# Program: HashMap Implementation
+# Description: This module implements a hash map abstract data type using open
+#              addressing for collision resolution. The implementation includes
+#              dynamic resizing, load factor tracking, key/value insertion and
+#              retrieval, removal, clearing, and utility methods for inspecting
+#              stored entries.
+#
+#              This project demonstrates hash table design, collision handling,
+#              dynamic capacity management, and data structure implementation
+#              without relying on built-in dictionary types.
+
 
 from a6_include import (DynamicArray, DynamicArrayException, HashEntry,
                         hash_function_1, hash_function_2)
